@@ -2,7 +2,15 @@ version: 0.0
 os: linux
  
 hooks:
-  AfterInstall:
+  BeforeInstall:
     - location: deploy.sh
       timeout: 300
+      runas: root
+  Install: 
+    - location: scripts/a.sh 
+      timeout: 100 
+      runas: root
+  AfterInstall: 
+    - location: scripts/b.sh 
+      timeout: 100
       runas: root
