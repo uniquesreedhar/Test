@@ -14,4 +14,4 @@ artifacts:
     - appspec.yaml
     - deploy.sh
     - scripts/*
-    name: $CODEBUILD_BUILD_NUMBER.zip
+  name: $CODEBUILD_BUILD_NUMBER.zip
