@@ -1,5 +1,16 @@
-version: 0.0
-os: linux
-files:
-  - source: /
-    destination: /
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.11
+
+  build:
+    commands:
+      - echo "Running tests..."
+      - echo "Building Docker image..."
+
+artifacts:
+  files:
+    - appspec.yaml
+    - deploy.sh
+    - scripts/*
