@@ -2,5 +2,3 @@ s3path=$(aws ssm get-parameters --names s3path --with-decryption --query Paramet
 
 aws s3 cp s3path  .
 unzip  a.zip
-./a.sh 
-./b.sh
