@@ -11,7 +11,7 @@ phases:
 
 artifacts:
   files:
-    - appspec.yaml
+    - appspec.yml
     - deploy.sh
     - scripts/*
   name: $CODEBUILD_BUILD_NUMBER.zip
