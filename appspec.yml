@@ -9,8 +9,8 @@ hooks:
   Install: 
     - location: scripts/a.sh 
       timeout: 100 
-      runas: root
+      runas: ubuntu
   AfterInstall: 
     - location: scripts/b.sh 
       timeout: 100
-      runas: root
+      runas: ubuntu
